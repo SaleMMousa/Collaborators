@@ -1,3 +1,4 @@
+import Header from "./components/header";
 import Offer from "./components/offer section/Offer";
 import {useState} from "react";
 
@@ -6,7 +7,7 @@ function App() {
   return (
     <div className="App">
         {show && <Offer handelShow={() => setShow((prev) => !prev)} />}
-gggg
+        <Header />
     </div>
   );
 }
