@@ -54,7 +54,7 @@ export const Typography = styled.p`
     margin: ${props => props.marginTypography};
     border: ${props => props.border};
     &.extrStyled{
-        width: 100%;
+        width: 70%;
     }
     &.collection{
         width: fit-content;
