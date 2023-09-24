@@ -9,7 +9,6 @@ import {
   StyledLi,
   StyledIcon,
 } from "./styledheader";
-import logo from "../../assets/Branding.png";
 import { Link } from "react-router-dom";
 import { AiOutlineSearch, AiOutlineUser } from "react-icons/ai";
 import { BiShoppingBag } from "react-icons/bi";
@@ -20,7 +19,7 @@ const Header = () => {
         <Container>
           <FlexBox className="jsb">
             <StyledLogoImg>
-              <img src={logo} alt="" srcset="" />
+              <img src={require("../../assets/Branding.png")} alt="" srcset="" />
             </StyledLogoImg>
             <StyledMenu>
               <StyledLi>Home</StyledLi>
