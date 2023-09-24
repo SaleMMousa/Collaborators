@@ -10,6 +10,10 @@ export const GlobalStyle = createGlobalStyle`
     body {
       margin: 0;
     }
+    ul{
+      list-style: none;
+    }
+
     
 `
 
@@ -23,6 +27,14 @@ export const theme = {
 
 export const FlexBox = styled.div`  
     display: flex;
+    &.jsb{
+      justify-content: space-between;
+    }
+    align-items: center;
+`
+export const Container = styled.div`  
+    width:90%;
+    margin: 0 auto;
 `
 
 export const FlexColum = styled(FlexBox)`  
