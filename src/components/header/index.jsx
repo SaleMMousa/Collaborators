@@ -19,15 +19,16 @@ const Header = () => {
         <Container>
           <FlexBox className="jsb">
             <StyledLogoImg>
-              <img src={require("../../assets/Branding.png")} alt="" srcset="" />
+              <img
+                src={require("../../assets/Branding.png")}
+                alt=""
+                srcset=""
+              />
             </StyledLogoImg>
             <StyledMenu>
-              <StyledLi>Home</StyledLi>
-              <StyledLi>Product</StyledLi>
-              <StyledLi>Category</StyledLi>
-              {/* <Link to={"/"}>Home</Link>
-              <Link to={"/product"}>Product</Link> */}
-              {/* <Link to={"/category"}>Category</Link> */}
+              <StyledLi to={"/"}>Home</StyledLi>
+              <StyledLi to={"/product"}>Product</StyledLi>
+              <StyledLi to={"/category"}>Category</StyledLi>
             </StyledMenu>
             <StyledIcons>
               <StyledIcon>
@@ -37,9 +38,9 @@ const Header = () => {
                 <AiOutlineUser />
               </StyledIcon>
               <StyledIcon>
-              <BiShoppingBag />
+                <BiShoppingBag />
               </StyledIcon>
-                <StyledCart>5</StyledCart>
+              <StyledCart>5</StyledCart>
             </StyledIcons>
           </FlexBox>
         </Container>

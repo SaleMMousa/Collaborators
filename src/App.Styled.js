@@ -10,6 +10,8 @@ export const GlobalStyle = createGlobalStyle`
 }
     body {
         margin: 0;
+      color: #121212;
+
     }
     ul{
       list-style: none;
@@ -31,11 +33,13 @@ export const FlexBox = styled.div`
     &.jsb{
       justify-content: space-between;
     }
+    justify-content: ${props => props.justify};
+  align-items: ${props => props.items};
     align-items: center;
 `
 export const Container = styled.div`  
-    width:90%;
-    margin: 0 auto;
+   width: 90%;
+  margin: 0px auto;
 `
 
 export const FlexColum = styled(FlexBox)`  
@@ -46,11 +50,20 @@ export const Typography = styled.p`
     font-size: ${props => props.fontSize}px;
     font-weight: ${props => props.fontWeight};
     color: ${props => props.color};
+    text-align: ${props => props.align};
     margin: ${props => props.marginTypography};
+    border: ${props => props.border};
     &.extrStyled{
-        width: 70%;
+        width: 100%;
+    }
+    &.collection{
+        width: fit-content;
+        margin: 0 auto;
+        border-bottom: 1px solid #000;
+        padding-bottom:10px
     }
     
+  
     
 `
 
@@ -82,3 +95,11 @@ export const StyledImg = styled.img`
     width: 100%;
     height: 100%;
 `
+
+export const StyledImage = styled.img`
+  max-width: 100%;
+  width: ${props => props.width};
+  height: ${props => props.height};
+  border-radius: ${props => props.radius};
+`
+

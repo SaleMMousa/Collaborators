@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { FlexBox } from "../../App.Styled";
+import { Link } from "react-router-dom";
 
 export const StyledLogoImg = styled.div`
 width: 155px;
@@ -8,7 +9,7 @@ export const StyledHeader = styled.div`
   padding: 20px 0;
 `;
 
-export const StyledLi = styled.p`
+export const StyledLi = styled(Link)`
   margin-left: 40px;
   color: #121212;
 
