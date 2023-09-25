@@ -1,22 +1,29 @@
-import {  Div, HeroContainer, StyledButton, StyledImg, Typography } from "../../App.Styled"
-
+import { Typography } from "../../App.Styled";
+import {
+  HeroContainer,
+  HeroContent,
+  StyledButton,
+  HeroImg,
+} from "./StyledHero";
 
 function Hero() {
-    return (
-        <HeroContainer className="flex">
-                <Div>
-                    <Typography className="extrStyled" fontSize ="50" fontWeight ="600" marginTypography = "180px 0 40px 60px">Care products for every home.</Typography>
-                    <Typography className="extrStyled" fontSize ="20" marginTypography = "10px 0 20px 60px">Keep your everyday style chic and on-trend with our selection 20+ styles to choose from.</Typography>
-                    <StyledButton>See Collection</StyledButton>
-                </Div>
-                <Div>
-                    <StyledImg src = {require('../../assets/img.png')}/>
-                </Div>
-                
-            
-
-        </HeroContainer>
-    )
+  return (
+    <HeroContainer>
+      <HeroContent>
+        <Typography className="extrStyled" fs="54" fw="500" ls="-1px">
+          Care products for every home.
+        </Typography>
+        <Typography className="extrStyled" fs="18" m="8px 0 0 0">
+          Keep your everyday style chic and on-trend with our selection 20+
+          styles to choose from.
+        </Typography>
+        <StyledButton>See Collection</StyledButton>
+      </HeroContent>
+      <HeroImg>
+        <img src={require("../../assets/img.png")} />
+      </HeroImg>
+    </HeroContainer>
+  );
 }
 
-export default Hero
+export default Hero;

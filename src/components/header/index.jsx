@@ -2,12 +2,11 @@ import React from "react";
 import { Container, FlexBox } from "../../App.Styled";
 import {
   StyledCart,
-  StyledIcons,
   StyledLogoImg,
-  StyledMenu,
   StyledHeader,
-  StyledLi,
+  StyledLink,
   StyledIcon,
+  StyledHeaderContent,
 } from "./styledheader";
 import { Link } from "react-router-dom";
 import { AiOutlineSearch, AiOutlineUser } from "react-icons/ai";
@@ -17,7 +16,7 @@ const Header = () => {
     <div className="header">
       <StyledHeader>
         <Container>
-          <FlexBox className="jsb">
+          <StyledHeaderContent>
             <StyledLogoImg>
               <img
                 src={require("../../assets/Branding.png")}
@@ -25,24 +24,20 @@ const Header = () => {
                 srcset=""
               />
             </StyledLogoImg>
-            <StyledMenu>
-              <StyledLi to={"/"}>Home</StyledLi>
-              <StyledLi to={"/product"}>Product</StyledLi>
-              <StyledLi to={"/category"}>Category</StyledLi>
-            </StyledMenu>
-            <StyledIcons>
+            <FlexBox align="center">
+              <StyledLink to={"/"}>Home</StyledLink>
+              <StyledLink to={"/product"}>Product</StyledLink>
+              <StyledLink to={"/category"}>Category</StyledLink>
+            </FlexBox>
+            <FlexBox align="center">
               <StyledIcon>
-                <AiOutlineSearch />
-              </StyledIcon>
-              <StyledIcon>
-                <AiOutlineUser />
-              </StyledIcon>
-              <StyledIcon>
-                <BiShoppingBag />
+                <AiOutlineSearch size={'24px'} />
+                <AiOutlineUser size={'24px'} />
+                <BiShoppingBag size={'24px'} />
               </StyledIcon>
               <StyledCart>5</StyledCart>
-            </StyledIcons>
-          </FlexBox>
+            </FlexBox>
+          </StyledHeaderContent>
         </Container>
       </StyledHeader>
     </div>
