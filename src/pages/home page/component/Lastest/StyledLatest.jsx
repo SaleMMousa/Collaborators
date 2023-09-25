@@ -1,5 +1,6 @@
+
 import styled from "styled-components";
-import { Typography } from "../../../../App.Styled";
+
 
 export const LatestContent = styled.div`
   /* position: relative; */
@@ -11,6 +12,7 @@ export const LatestTitle = styled.h3`
   line-height: 38px;
   letter-spacing: -0.6px;
 `;
+
 export const Staten = styled.span`
   padding: 4px 14px;
   border-radius: 100px;
