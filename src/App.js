@@ -8,8 +8,10 @@ function App() {
   return (
     <div className="App">
         {show && <Offer handelShow={() => setShow((prev) => !prev)} />}
-      <Hero />
+        
         <Header />
+        <Hero />
+        
     </div>
   );
 }
