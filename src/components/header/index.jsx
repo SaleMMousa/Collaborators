@@ -2,12 +2,11 @@ import React from "react";
 import { Container, FlexBox } from "../../App.Styled";
 import {
   StyledCart,
-  StyledIcons,
   StyledLogoImg,
-  StyledMenu,
   StyledHeader,
-  StyledLi,
+  StyledLink,
   StyledIcon,
+  StyledHeaderContent,
 } from "./styledheader";
 
 import { AiOutlineSearch, AiOutlineUser } from "react-icons/ai";
@@ -19,31 +18,28 @@ const Header = () => {
     <div className="header">
       <StyledHeader>
         <Container>
-          <FlexBox className="jsb">
+          <StyledHeaderContent>
             <StyledLogoImg>
-              <img src={require("../../assets/Branding.png")} alt="" srcset="" />
+              <img
+                src={require("../../assets/Branding.png")}
+                alt=""
+                srcset=""
+              />
             </StyledLogoImg>
-            <StyledMenu>
-              <StyledLi>Home</StyledLi>
-              <StyledLi>Product</StyledLi>
-              <StyledLi>Category</StyledLi>
-              {/* <Link to={"/"}>Home</Link>
-              <Link to={"/product"}>Product</Link> */}
-              {/* <Link to={"/category"}>Category</Link> */}
-            </StyledMenu>
-            <StyledIcons>
+            <FlexBox align="center">
+              <StyledLink to={"/"}>Home</StyledLink>
+              <StyledLink to={"/product"}>Product</StyledLink>
+              <StyledLink to={"/category"}>Category</StyledLink>
+            </FlexBox>
+            <FlexBox align="center">
               <StyledIcon>
-                <AiOutlineSearch />
+                <AiOutlineSearch size={'24px'} />
+                <AiOutlineUser size={'24px'} />
+                <BiShoppingBag size={'24px'} />
               </StyledIcon>
-              <StyledIcon>
-                <AiOutlineUser />
-              </StyledIcon>
-              <StyledIcon>
-              <BiShoppingBag />
-              </StyledIcon>
-                <StyledCart>5</StyledCart>
-            </StyledIcons>
-          </FlexBox>
+              <StyledCart>5</StyledCart>
+            </FlexBox>
+          </StyledHeaderContent>
         </Container>
       </StyledHeader>
     </div>
