@@ -1,5 +1,6 @@
+
 import styled from "styled-components";
-import { Typography } from "../../../../App.Styled";
+
 
 export const LatestContent = styled.div`
   /* position: relative; */
