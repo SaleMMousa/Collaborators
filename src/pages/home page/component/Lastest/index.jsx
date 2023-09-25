@@ -4,6 +4,7 @@ import { LatestContent, LatestTitle, Oldprice, Staten } from "./StyledLatest";
 import { SwiperContainer } from "../Home.Styles";
 import { Swiper, SwiperSlide } from "swiper/react";
 
+
 function Latest() {
   const Card = ({ img, name, price, oldPrice, state }) => {
     return (
