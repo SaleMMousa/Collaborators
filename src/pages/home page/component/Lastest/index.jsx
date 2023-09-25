@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, StyledImage, Typography } from "../../../../App.Styled";
-import { LatestContent, LatestTitle, Oldprice, Staten, StyledLatestCard } from "./StyledLatest";
+import { LatestContent, LatestTitle, Oldprice, Staten } from "./StyledLatest";
 import { SwiperContainer } from "../Home.Styles";
 import { Swiper, SwiperSlide } from "swiper/react";
 

@@ -4,6 +4,7 @@ import Categories from "./component/Categories";
 import Collection from "./component/Collection";
 import ShopBrands from "./component/Shopbrands";
 import Latest from "./component/Lastest";
+import Join from "../../components/join/Join";
 
 function HomePage(props) {
   return (
@@ -12,6 +13,8 @@ function HomePage(props) {
       <Collection />
       <Latest/>
       <ShopBrands />
+      <Join/>
+      
     </>
   );
 }
