@@ -8,9 +8,11 @@ import {
   StyledIcon,
   StyledHeaderContent,
 } from "./styledheader";
-import { Link } from "react-router-dom";
+
 import { AiOutlineSearch, AiOutlineUser } from "react-icons/ai";
 import { BiShoppingBag } from "react-icons/bi";
+import { Link } from "react-router-dom";
+
 const Header = () => {
   return (
     <div className="header">
