@@ -33,10 +33,13 @@ export const FlexBox = styled.div`
   justify-content: ${(props) => props.justify};
   align-items: ${(props) => props.align};
   flex-direction: ${(props) => props.direction};
+  width: ${(props) => props.wth}%;
+  padding:${(props) => props.p};
+  
 `;
 export const Container = styled.div`
   width: 90%;
-  margin: 0px auto;
+  margin: 0 auto;
 `;
 
 export const FlexColum = styled(FlexBox)`
@@ -53,6 +56,7 @@ export const Typography = styled.p`
   margin-bottom: ${(props) => props.mb}px;
   border: ${(props) => props.border};
   letter-spacing: ${(props) => props.ls};
+  line-height: ${(props) => props.lh}px;
   border-bottom: ${(props) => props.bb};
   &.extrStyled {
     width: 70%;
@@ -73,3 +77,37 @@ export const StyledImage = styled.img`
   border-radius: ${(props) => props.radius};
   margin-bottom: ${(props) => props.mt}px;
 `;
+export const StyleDiv = styled.div`
+  width:35%;
+`
+export const StyledIcon = styled.div`
+  font-size: 20px;
+  color: #121212;
+  margin-right: 10px;
+  margin-top: 20px;
+  background-color: white;
+  display: inline-block;
+  border-radius: 50%;
+  width: 10%;
+  height: 5%;
+  padding-top: 5px;
+  text-align: center;
+`
+
+export const DivContiner = styled.div`
+  background-color: #FAFAFB;
+  padding: 72px;
+
+`
+
+export const StyledIconCon = styled.div`
+  margin-top: 16px;
+`
+
+export const Line = styled.hr`
+  
+`
+export const StyleSelect = styled.select`
+    border: none;
+    margin-left: 20px;
+`
