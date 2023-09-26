@@ -5,15 +5,24 @@ import Collection from "./component/Collection";
 import ShopBrands from "./component/Shopbrands";
 import Latest from "./component/Lastest";
 import Trending from "./component/Trending";
+import Join from "../../components/join/Join";
+import Instagram from "../../components/instagram/Instagram";
+import Hero from "../../components/hero/Hero";
+import Header from "../../components/header";
 
 function HomePage(props) {
   return (
     <>
+      <Header />
+      <Hero />
       <Categories />
       <Collection />
-      <Latest/>
+      <Latest />
       <ShopBrands />
       <Trending/>
+      <Join />
+      <Instagram />
+
     </>
   );
 }

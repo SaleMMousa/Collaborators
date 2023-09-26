@@ -1,8 +1,8 @@
 import React from "react";
 import { Container, StyledImage, Typography } from "../../../../App.Styled";
 import { LatestContent, LatestTitle, Oldprice, Staten } from "./StyledLatest";
-
 import { Swiper, SwiperSlide } from "swiper/react";
+
 
 function Latest() {
   const Card = ({ img, name, price, oldPrice, state }) => {
