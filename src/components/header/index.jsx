@@ -7,10 +7,12 @@ import {
   StyledLink,
   StyledIcon,
   StyledHeaderContent,
+  StyledNav,
+  StyledMenuIcon,
 } from "./styledheader";
-import { Link } from "react-router-dom";
 import { AiOutlineSearch, AiOutlineUser } from "react-icons/ai";
 import { BiShoppingBag } from "react-icons/bi";
+import { HiOutlineMenuAlt4 } from "react-icons/hi";
 const Header = () => {
   return (
     <div className="header">
@@ -24,18 +26,19 @@ const Header = () => {
                 srcset=""
               />
             </StyledLogoImg>
-            <FlexBox align="center">
+            <StyledNav>
               <StyledLink to={"/"}>Home</StyledLink>
               <StyledLink to={"/product"}>Product</StyledLink>
               <StyledLink to={"/category"}>Category</StyledLink>
-            </FlexBox>
+            </StyledNav>
             <FlexBox align="center">
               <StyledIcon>
                 <AiOutlineSearch size={'24px'} />
                 <AiOutlineUser size={'24px'} />
-                <BiShoppingBag size={'24px'} />
               </StyledIcon>
+                <BiShoppingBag size={'24px'} />
               <StyledCart>5</StyledCart>
+              <StyledMenuIcon><HiOutlineMenuAlt4/></StyledMenuIcon>
             </FlexBox>
           </StyledHeaderContent>
         </Container>

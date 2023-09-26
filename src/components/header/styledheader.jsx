@@ -4,14 +4,22 @@ import { Link } from "react-router-dom";
 
 export const StyledHeader = styled.div`
   padding: 20px 0;
+  @media screen  and (max-width: 700px){
+    padding: 10px 0;
+  }
 `;
 export const StyledHeaderContent = styled(FlexBox)`
   justify-content: space-between;
+  align-items: center;
 `;
 export const StyledLogoImg = styled.div`
 width: 155px;
-height: 30px;`;
-
+height: 30px;
+  @media screen  and (max-width: 700px){
+    width: 114px;
+    height: 22px;
+}
+`;
 export const StyledLink = styled(Link)`
   margin: 0 20px;
   font-size: 14px;
@@ -22,9 +30,28 @@ export const StyledLink = styled(Link)`
 `;
 
 export const StyledIcon = styled(FlexBox)`
-width: 125px;
+width: 70px;
 align-items: center;
 justify-content: space-between;
+margin-right: 20px;
+@media screen  and (max-width: 700px){
+     display: none;
+  }
+`;
+export const StyledNav = styled(FlexBox)`
+align-items: center;
+@media screen  and (max-width: 700px){
+     display: none;
+  }
+`;
+export const StyledMenuIcon = styled.div`
+font-size: 30px;
+margin-left: 20px;
+line-height: 2px;
+display: none;
+@media screen  and (max-width: 700px){
+  display: block;
+  }
 `;
 export const StyledCart = styled(FlexBox)`
 width: 20px;

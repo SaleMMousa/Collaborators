@@ -17,7 +17,7 @@ export const GlobalStyle = createGlobalStyle`
     }
     img{
       height: 100%;
-      max-width: 100%;
+      width: 100%;
     }
 `;
 
@@ -54,7 +54,8 @@ export const Typography = styled.p`
   letter-spacing: ${(props) => props.ls};
   border-bottom: ${(props) => props.bb};
   &.extrStyled {
-    width: 70%;
+    width: 100%;
+    max-width: 410px;
   }
   &.collection {
     width: fit-content;
@@ -62,6 +63,17 @@ export const Typography = styled.p`
     border-bottom: 1px solid #000;
     padding-bottom: 2px;
     
+  }
+  &.none{
+    @media screen  and (max-width: 700px){
+      display: none;
+  }
+  }
+  &.center{
+    @media screen  and (max-width: 700px){
+     text-align: center;
+     width: 100%;
+  }
   }
 `;
 

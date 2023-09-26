@@ -1,49 +1,54 @@
 import React from "react";
+import { Container, StyledImage, Typography } from "../../../App.Styled";
 import {
-  Container,
-  FlexBox,
-  StyledImage,
-  Typography,
-} from "../../../App.Styled";
-import {
-    StyledBrandsWrapper,
-  StyledCardWrapper,
+  BrandImage,
+  StyledBrandsWrapper,
   StyledShopContent,
   StyledShopImages,
 } from "./Home.Styles";
 import { FaArrowRight } from "react-icons/fa";
-import brandImg1 from "../../../assets/Logos.png";
-import brandImg2 from "../../../assets/Logos.svg";
+import { LatestContent } from "./Lastest/StyledLatest";
 
-function ShopBrands(props) {
+function ShopBrands() {
   return (
-    <StyledCardWrapper>
-
-    <Container>
-      <StyledBrandsWrapper>
-        <StyledShopContent>
-          <Typography fs={40} fw={500}>
-            Shop brands
-          </Typography>
-          <Typography fs={18} color={"#3E3E59"} mt={16}>
-            At vero eos et accusamus et iusto odio dignissimos ducimus qui
-            blanditiis praesentium voluptatum deleniti atqu.
-          </Typography>
-          <Typography fs={18} mt={24}>
-            See all brands <FaArrowRight fs={18} />
-          </Typography>
-        </StyledShopContent>
-        <StyledShopImages>
-          <StyledImage width={'155px'} height={'60px'} mt={24}  src={brandImg1} />
-          <StyledImage width={'155px'} height={'60px'} mt={24}  src={brandImg2} />
-          <StyledImage width={'155px'} height={'60px'} mt={24}  src={brandImg2} />
-          <StyledImage width={'155px'} height={'60px'} mt={24}  src={brandImg1} />
-          <StyledImage width={'155px'} height={'60px'} mt={24}  src={brandImg2} />
-          <StyledImage width={'155px'} height={'60px'} mt={24} src={brandImg2} />
-        </StyledShopImages>
-      </StyledBrandsWrapper>
-    </Container>
-    </StyledCardWrapper>
+    <LatestContent>
+      <Container>
+        <StyledBrandsWrapper>
+          <StyledShopContent>
+            <Typography fs={40} fw={500}>
+              Shop brands
+            </Typography>
+            <Typography fs={18} color={"#3E3E59"} mt={16}>
+              At vero eos et accusamus et iusto odio dignissimos ducimus qui
+              blanditiis praesentium voluptatum deleniti atqu.
+            </Typography>
+            <Typography fs={18} mt={24}>
+              See all brands <FaArrowRight fs={18} />
+            </Typography>
+          </StyledShopContent>
+          <StyledShopImages>
+            <BrandImage>
+              <StyledImage mt={24} src={require("../../../assets/Logos.png")} />
+            </BrandImage>
+            <BrandImage>
+              <StyledImage mt={24} src={require("../../../assets/Logos1.png")} />
+            </BrandImage>
+            <BrandImage>
+              <StyledImage mt={24} src={require("../../../assets/Logos3.png")} />
+            </BrandImage>
+            <BrandImage>
+              <StyledImage mt={24} src={require("../../../assets/Logos3.png")} />
+            </BrandImage>
+            <BrandImage>
+              <StyledImage mt={24} src={require("../../../assets/Logos4.png")} />
+            </BrandImage>
+            <BrandImage>
+              <StyledImage mt={24} src={require("../../../assets/Logos5.png")} />
+            </BrandImage>
+          </StyledShopImages>
+        </StyledBrandsWrapper>
+      </Container>
+    </LatestContent>
   );
 }
 

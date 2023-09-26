@@ -1,14 +1,14 @@
 import React from "react";
 import { Container, StyledImage, Typography } from "../../../../App.Styled";
-import { LatestContent, LatestTitle, Oldprice, Staten, StyledLatestCard } from "./StyledLatest";
-import { SwiperContainer } from "../Home.Styles";
+import { LatestContent, LatestTitle, Oldprice, Staten } from "./StyledLatest";
+
 import { Swiper, SwiperSlide } from "swiper/react";
 
 function Latest() {
   const Card = ({ img, name, price, oldPrice, state }) => {
     return (
       <>
-        <StyledImage src={img} width={"310px"} height={"413px"} />
+        <StyledImage src={img} width={"100%"} height={"413px"} />
         <Typography fw={'600'} ls={-0.4} mt="15">{name}</Typography>
         <Typography mt="15" fw={600}>
           {price}
@@ -16,7 +16,7 @@ function Latest() {
             {oldPrice}
           </Oldprice>
         </Typography>
-        <Staten>NEW</Staten>
+        {state?<Staten>NEW</Staten>:""}
       </>
     );
   };
@@ -24,10 +24,39 @@ function Latest() {
     <Container>
       <LatestContent>
         <LatestTitle>Latest Additions</LatestTitle>
-        <SwiperContainer>
+        <LatestContent>
           <Swiper
-            spaceBetween={32}
-            slidesPerView={4}
+            
+          breakpoints={{
+            1200: {
+              spaceBetween:32,
+          slidesPerView:4
+            },
+            1000: {
+              spaceBetween:30,
+          slidesPerView:3.5
+            },
+            950: {
+              spaceBetween:28,
+          slidesPerView:3
+            },
+            768: {
+              spaceBetween:24,
+          slidesPerView:2.5
+            },
+            620: {
+              spaceBetween:20,
+          slidesPerView:2
+            },
+            570: {
+              spaceBetween:15,
+          slidesPerView:1.5
+            },
+            200: {
+              spaceBetween:16,
+          slidesPerView:1.2
+            },
+          }}
             // onSlideChange={() => console.log('slide change')}
             // onSwiper={(swiper) => console.log(swiper)}
           >
@@ -37,6 +66,7 @@ function Latest() {
               oldPrice={"$56.00"}
               price={"$56.00"}
               img={require("../../../../assets/latest1.png")}
+              state={true}
             />
           </SwiperSlide>
           <SwiperSlide>
@@ -88,7 +118,7 @@ function Latest() {
             />
             </SwiperSlide>
           </Swiper>
-        </SwiperContainer>
+        </LatestContent>
       </LatestContent>
     </Container>
   );

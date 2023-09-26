@@ -1,46 +1,85 @@
 import styled from "styled-components";
-import { FlexBox, StyledImage } from "../../../App.Styled";
+import { FlexBox } from "../../../App.Styled";
 
-export const CategoriesContainer = styled.div`
-  padding: 52px 0 52px 52px;
-  overflow: hidden;
-`;
+
 export const CategoriesHeader = styled(FlexBox)`
   justify-content: space-between;
   width: 90%;
-  margin: 0 auto;
+  margin: 52px auto;
   align-items: center;
 `;
 
 export const SwiperContainer = styled.div`
-  margin-top: 32px;
+  padding: 32px 0 52px  5%;
 `;
 export const StyledCardWrapper = styled(FlexBox)`
   justify-content: space-between;
   text-align: center;
-  padding: 52px 0;
+  
+  flex-wrap: wrap;
 `;
 
 export const StyledCard = styled.div`
   width: 49%;
+  padding: 52px 0;
+  @media screen  and (max-width: 700px){
+    width: 100%;
+    padding: 25px 0;
+  }
 `;
 export const StyledBrandsWrapper = styled(FlexBox)`
-  padding:70px 52px ;
+  padding: 70px 52px;
   justify-content: space-between;
-  background-color: #FAFAFB;
+  background-color: #fafafb;
+  flex-wrap: wrap;
+  @media screen  and (max-width: 700px){
+    padding: 40px 16px;
+  }
 `;
 
+export const BrandImage = styled.div`
+  width: 30%;
+  min-width: 140px;
+`;
 export const StyledShopContent = styled.div`
-  width: 48%;
+  width: 40%;
   text-align: left;
+  @media screen  and (max-width: 700px){
+    width: 100%;
+  }
 `;
 
 export const StyledShopImages = styled(FlexBox)`
   justify-content: space-between;
   width: 47%;
   flex-wrap: wrap;
-  /* align-items: space-between !important; */
   &img {
     margin: 10px;
+  }
+  @media screen  and (max-width: 700px){
+    width: 100%;
+  }
+`;
+
+export const TrendingContent = styled(FlexBox)`
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+`;
+export const TrendingDetail = styled.div`
+  padding: 143px 0;
+  width:33%;
+  @media screen  and (max-width: 700px){
+    padding: 24px 0;
+    width:90%;
+      /* max-width: 600px; */
+  }
+`;
+export const TrendingImg = styled.div`
+ width: 43%;
+ padding-bottom: 57px;
+ @media screen  and (max-width: 700px){
+  width:70%;
+  margin-left: auto;
   }
 `;

@@ -4,6 +4,7 @@ import Categories from "./component/Categories";
 import Collection from "./component/Collection";
 import ShopBrands from "./component/Shopbrands";
 import Latest from "./component/Lastest";
+import Trending from "./component/Trending";
 
 function HomePage(props) {
   return (
@@ -12,6 +13,7 @@ function HomePage(props) {
       <Collection />
       <Latest/>
       <ShopBrands />
+      <Trending/>
     </>
   );
 }

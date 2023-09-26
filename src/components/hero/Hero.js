@@ -20,7 +20,7 @@ function Hero() {
         <StyledButton>See Collection</StyledButton>
       </HeroContent>
       <HeroImg>
-        <img src={require("../../assets/img.png")} />
+        <img src={require("../../assets/img.png")} alt="" />
       </HeroImg>
     </HeroContainer>
   );
