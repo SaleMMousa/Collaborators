@@ -50,6 +50,7 @@ export const Typography = styled.p`
   text-align: ${(props) => props.align};
   margin: ${(props) => props.m}px;
   margin-top: ${(props) => props.mt}px;
+  margin-bottom: ${(props) => props.mb}px;
   border: ${(props) => props.border};
   letter-spacing: ${(props) => props.ls};
   border-bottom: ${(props) => props.bb};

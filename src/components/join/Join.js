@@ -1,25 +1,23 @@
 import React from 'react';
-import { EmailContainer, JoinContainer,  JoinSection, StyledButton, StyledInput } from './StyledJoin';
+import { EmailContainer, JoinSection, StyledButton, StyledInput } from './StyledJoin';
 import { Typography } from '../../App.Styled';
-import {AiOutlineMail} from 'react-icons/ai';
+import { AiOutlineMail } from 'react-icons/ai';
 function Join() {
-    return ( 
+    return (
         <JoinSection>
-            <JoinContainer>
-            <Typography fs={"40"} fw={500}>
-            Join Our Newsletter
+            <Typography   fs={"50"} fw={500} mt={50}>
+                Join Our Newsletter
             </Typography>
-            <Typography fs={"18"} fw={400}>
-            Big discounts and right to your inbox.
+            <Typography  fs={"20"} fw={400}>
+                Big discounts and right to your inbox.
             </Typography>
             <EmailContainer >
-                 <AiOutlineMail/>
-                 <StyledInput placeholder='Email address'></StyledInput>
-                 <StyledButton type="submit" value="Submit"> Signup</StyledButton>
+                <AiOutlineMail />
+                <StyledInput placeholder='Email address'></StyledInput>
+                <StyledButton type="submit" value="Submit"> Signup</StyledButton>
             </EmailContainer>
-            </JoinContainer>
         </JoinSection>
-     );
+    );
 }
 
 export default Join;
