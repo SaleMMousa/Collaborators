@@ -95,7 +95,7 @@ export const StyledIcon = styled.div`
 
 export const DivContiner = styled.div`
   background-color: #FAFAFB;
-  padding: 72px;
+  padding: 72px 0;
 
 `
 
