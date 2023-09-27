@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Typography } from "../../App.Styled";
 
 export const JoinSection = styled.div`
     background:  #FAFAFB;    
@@ -30,6 +31,7 @@ width: 400px;
     width: 200px; 
   }
 `
+
 export const StyledButton = styled.button`
   display: flex;
   align-items: center; 
@@ -41,3 +43,14 @@ export const StyledButton = styled.button`
   letter-spacing: -0.4px;
   line-height: 28px;
 `;
+
+export const JoinFonts = styled(Typography)`
+ @media (max-width: 768px) {
+    font-size:  35px!important; 
+ }  
+`
+export const JoinP = styled(Typography)`
+ @media (max-width: 768px) {
+    font-size:  16px!important; 
+ }  
+`

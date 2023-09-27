@@ -1,16 +1,16 @@
 import React from 'react';
-import { EmailContainer, JoinSection, StyledButton, StyledInput } from './StyledJoin';
-import { Typography } from '../../App.Styled';
+import { EmailContainer, JoinFonts, JoinP, JoinSection, StyledButton, StyledInput } from './StyledJoin';
 import { AiOutlineMail } from 'react-icons/ai';
 function Join() {
     return (
         <JoinSection>
-            <Typography   fs={"50"} fw={500} mt={50}>
+
+            <JoinFonts    fs={"50"} fw={500} mt={50}>
                 Join Our Newsletter
-            </Typography>
-            <Typography  fs={"20"} fw={400}>
+            </JoinFonts>
+            <JoinP ypography  fs={"20"} fw={400}>
                 Big discounts and right to your inbox.
-            </Typography>
+            </JoinP>
             <EmailContainer >
                 <AiOutlineMail />
                 <StyledInput placeholder='Email address'></StyledInput>
