@@ -104,10 +104,7 @@ export const StyledImage = styled.img`
   margin-bottom: ${(props) => props.mt}px;
 `;
 export const StyleDiv = styled.div`
-  width:35%;
-  @media (max-width:768px){
-    width:90%
-} 
+ 
   width:100%;
   max-width: 350px;
 `
