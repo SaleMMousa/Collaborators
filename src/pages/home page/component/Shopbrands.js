@@ -5,7 +5,7 @@ import {
   StyledBrandsWrapper,
   StyledShopContent,
   StyledShopImages,
-} from "./Home.Styles";
+} from "../Home.Styles";
 import { FaArrowRight } from "react-icons/fa";
 import { LatestContent } from "./Lastest/StyledLatest";
 

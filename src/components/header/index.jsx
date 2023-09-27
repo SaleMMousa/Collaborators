@@ -28,7 +28,7 @@ const Header = () => {
             </StyledLogoImg>
             <StyledNav>
               <StyledLink to={"/"}>Home</StyledLink>
-              <StyledLink to={"/product"}>Product</StyledLink>
+              <StyledLink to={"/products"}>Product</StyledLink>
               <StyledLink to={"/category"}>Category</StyledLink>
             </StyledNav>
             <FlexBox align="center">

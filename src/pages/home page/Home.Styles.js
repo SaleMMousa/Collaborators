@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { FlexBox } from "../../../App.Styled";
+import { FlexBox } from "../../App.Styled";
 
 
 export const CategoriesHeader = styled(FlexBox)`

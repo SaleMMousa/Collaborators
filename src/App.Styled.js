@@ -24,7 +24,7 @@ export const GlobalStyle = createGlobalStyle`
 export const theme = {
   pallete: {
     black: "#000",
-    white: "#fff",
+    white: "#fff", 
   },
 };
 
@@ -35,6 +35,7 @@ export const FlexBox = styled.div`
   flex-direction: ${(props) => props.direction};
   width: ${(props) => props.wth}%;
   padding:${(props) => props.p};
+<<<<<<< HEAD
   @media (max-width:768px){
     flex-direction: column;
     align-items: start;
@@ -46,6 +47,14 @@ export const Container = styled.div`
   width: 90%;
   margin: 0 auto;
 
+=======
+  flex-wrap: ${(props) => props.wrap};
+  margin:${(props) => props.margin};
+`;
+export const Container = styled.div`
+  width: 90%;
+  margin: 0 auto; 
+>>>>>>> tariq
 `;
 
 export const FlexColum = styled(FlexBox)`
@@ -101,10 +110,19 @@ export const StyledImage = styled.img`
   margin-bottom: ${(props) => props.mt}px;
 `;
 export const StyleDiv = styled.div`
+<<<<<<< HEAD
   width:35%;
   @media (max-width:768px){
     width:90%
 } 
+=======
+  width:100%;
+  max-width: 350px;
+`
+export const StyledDel= styled.del`
+  width:100%;
+  max-width: 350px;
+>>>>>>> tariq
 `
 export const StyledIcon = styled.div`
   font-size: 20px;

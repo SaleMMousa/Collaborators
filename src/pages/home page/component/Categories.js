@@ -3,7 +3,7 @@ import {  StyledImage, Typography } from "../../../App.Styled";
 import {
   CategoriesHeader,
   SwiperContainer,
-} from "./Home.Styles";
+} from "../Home.Styles";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
