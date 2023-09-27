@@ -10,7 +10,7 @@ import { Box, Button, CardMedia, Rating, Typography } from "@mui/material";
 import { RouterProduct } from "../../Router";
 import { FlexBox, FlexColum, StyledImage } from "../../App.Styled";
 
-function Product() {
+export const Product = () => {
   const ReviewCard = () => {
     return (
       <HeaderReviews>
@@ -66,5 +66,3 @@ function Product() {
     </StyledDescriptionWrapper>
   );
 }
-
-export default Product;

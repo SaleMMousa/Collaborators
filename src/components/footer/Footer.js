@@ -2,7 +2,7 @@ import { BiLogoFacebook } from "react-icons/bi"
 import { DivContiner,Container, FlexBox, StyleDiv, StyledIcon, Typography, StyledIconCon, Line, StyleSelect } from "../../App.Styled"
 import { AiOutlineInstagram, AiOutlineMail, AiOutlineTwitter } from "react-icons/ai"
 
-function Footer() {
+export const Footer = () => {
     return (
         <>
             <DivContiner >
@@ -69,6 +69,3 @@ function Footer() {
 
     )
 }
-
-
-export default Footer

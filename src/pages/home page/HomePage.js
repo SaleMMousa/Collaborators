@@ -6,9 +6,9 @@ import ShopBrands from "./component/Shopbrands";
 import Latest from "./component/Lastest";
 import Trending from "./component/Trending";
 import Join from "../../components/join/Join";
-import Instagram from "../../components/instagram/Instagram";
 import Hero from "../../components/hero/Hero";
 import Header from "../../components/header";
+import { Instagram } from "../../components";
 
 function HomePage(props) {
   return (

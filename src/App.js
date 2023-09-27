@@ -1,9 +1,8 @@
-import Offer from "./components/offer section/Offer";
+import Offer from "./components/offer-section/Offer";
 import { useState } from "react";
-import Footer from "./components/footer";
 import Header from "./components/header";
-import Product from "./pages/product";
 import Router from "./Router";
+import { Footer } from "./components";
 
 function App() {
   const [show, setShow] = useState(true);
@@ -11,7 +10,7 @@ function App() {
     <div className="App">
       {show && <Offer handelShow={() => setShow((prev) => !prev)} />}
       <Header />
-       <Router />
+      <Router />
       <Footer />
       {/* <Products/> */}
       {/* <Product/> */}

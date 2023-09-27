@@ -1,7 +1,7 @@
 import { Typography } from "../../App.Styled";
 import { Image, ImageContainer, InstagramSection } from "./StyledInstagram";
 
-function Instagram() {
+export const Instagram = () => {
     return (  
         <InstagramSection >
         <Typography fs={16} fw={600} mb={8}>
@@ -21,5 +21,3 @@ function Instagram() {
         </InstagramSection>
     );
 }
-
-export default Instagram;
