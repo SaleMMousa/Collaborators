@@ -13,7 +13,7 @@ import Header from "../../components/header";
 function HomePage(props) {
   return (
     <>
-      <Header />
+     
       <Hero />
       <Categories />
       <Collection />

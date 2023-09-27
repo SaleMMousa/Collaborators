@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, StyledImage, Typography } from "../../../App.Styled";
-import { StyledCard, StyledCardWrapper } from "./Home.Styles";
+import { StyledCard, StyledCardWrapper } from "../Home.Styles";
 
 function Collection() {
   const Card = ({ img, name }) => {

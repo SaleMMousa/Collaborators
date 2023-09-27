@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Typography } from "../../../App.Styled";
-import { TrendingContent, TrendingDetail, TrendingImg } from "./Home.Styles";
+import { TrendingContent, TrendingDetail, TrendingImg } from "../Home.Styles";
 import { StyledButton } from "../../../components/hero/StyledHero";
 
 function Trending() {

@@ -7,7 +7,7 @@ function Footer() {
         <>
             <DivContiner >
                 <Container>
-                    <FlexBox justify="space-between">
+                    <FlexBox justify="space-between" wrap="wrap">
                         <StyleDiv>
                             <Typography fs="34" fw="500" ls="-0.6px">About us</Typography>
                             <Typography fs="16" mt="16" fw="400" color = "#605F5F" lh="26">Experience the future of e-commerce design with SHOPR. Limitless design possibilities.</Typography>
@@ -45,9 +45,9 @@ function Footer() {
                     </FlexBox>
                 </Container>           
             </DivContiner>
-            <Container>
+            <Container >
                 <Line></Line>
-                <FlexBox justify="space-between" p ="24px 0 32px ">
+                <FlexBox justify="space-between" p ="24px 0 32px " >
                     <Typography color="#3E3E59" fw="400" fs ="14">© 2023 SHOPR</Typography>
                     <div>
                         <StyleSelect>

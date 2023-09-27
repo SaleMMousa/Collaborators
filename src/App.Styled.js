@@ -24,7 +24,7 @@ export const GlobalStyle = createGlobalStyle`
 export const theme = {
   pallete: {
     black: "#000",
-    white: "#fff",
+    white: "#fff", 
   },
 };
 
@@ -35,11 +35,12 @@ export const FlexBox = styled.div`
   flex-direction: ${(props) => props.direction};
   width: ${(props) => props.wth}%;
   padding:${(props) => props.p};
-  
+  flex-wrap: ${(props) => props.wrap};
+  margin:${(props) => props.margin};
 `;
 export const Container = styled.div`
   width: 90%;
-  margin: 0 auto;
+  margin: 0 auto; 
 `;
 
 export const FlexColum = styled(FlexBox)`
@@ -90,7 +91,12 @@ export const StyledImage = styled.img`
   margin-bottom: ${(props) => props.mt}px;
 `;
 export const StyleDiv = styled.div`
-  width:35%;
+  width:100%;
+  max-width: 350px;
+`
+export const StyledDel= styled.del`
+  width:100%;
+  max-width: 350px;
 `
 export const StyledIcon = styled.div`
   font-size: 20px;
@@ -108,7 +114,7 @@ export const StyledIcon = styled.div`
 
 export const DivContiner = styled.div`
   background-color: #FAFAFB;
-  padding: 72px;
+  padding: 72px 0;
 
 `
 
