@@ -35,12 +35,12 @@ export const FlexBox = styled.div`
   flex-direction: ${(props) => props.direction};
   width: ${(props) => props.wth}%;
   padding:${(props) => props.p};
-  @media (max-width:768px){
+  /* @media (max-width:768px){
     flex-direction: column;
     align-items: start;
     margin-top:20px;
     
-  }  
+  }   */
 `;
 export const Container = styled.div`
   width: 90%;
@@ -104,7 +104,10 @@ export const StyledImage = styled.img`
   margin-bottom: ${(props) => props.mt}px;
 `;
 export const StyleDiv = styled.div`
-
+  width:35%;
+  @media (max-width:768px){
+    width:90%
+} 
   width:100%;
   max-width: 350px;
 `
