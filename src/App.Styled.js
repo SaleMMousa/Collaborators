@@ -35,11 +35,17 @@ export const FlexBox = styled.div`
   flex-direction: ${(props) => props.direction};
   width: ${(props) => props.wth}%;
   padding:${(props) => props.p};
-  
+  @media (max-width:768px){
+    flex-direction: column;
+    align-items: start;
+    margin-top:20px;
+    
+  }  
 `;
 export const Container = styled.div`
   width: 90%;
   margin: 0 auto;
+
 `;
 
 export const FlexColum = styled(FlexBox)`
@@ -68,6 +74,11 @@ export const Typography = styled.p`
     border-bottom: 1px solid #000;
     padding-bottom: 2px;
     
+  }&.select{
+    @media (max-width:768px){
+    
+    
+  } 
   }
   &.none{
     @media screen  and (max-width: 700px){
@@ -91,6 +102,9 @@ export const StyledImage = styled.img`
 `;
 export const StyleDiv = styled.div`
   width:35%;
+  @media (max-width:768px){
+    width:90%
+} 
 `
 export const StyledIcon = styled.div`
   font-size: 20px;
@@ -108,7 +122,7 @@ export const StyledIcon = styled.div`
 
 export const DivContiner = styled.div`
   background-color: #FAFAFB;
-  padding: 72px;
+  padding: 72px 0;
 
 `
 
@@ -123,3 +137,6 @@ export const StyleSelect = styled.select`
     border: none;
     margin-left: 20px;
 `
+
+
+ 
