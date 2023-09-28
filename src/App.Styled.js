@@ -18,6 +18,12 @@ export const GlobalStyle = createGlobalStyle`
       height: 100%;
       width: 100%;
     }
+    .MuiButton-contained {
+  color: #fff !important;
+  background: #121212 !important;
+  border-radius: 6px;
+}
+
 `;
 
 export const theme = {
@@ -144,7 +150,9 @@ export const Line = styled.hr`
 export const StyleSelect = styled.select`
     border: none;
     margin-left: 20px;
-`
+`;
+
+
 
 
  
