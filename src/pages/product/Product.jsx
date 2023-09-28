@@ -9,6 +9,7 @@ import {
 import { Box, Button, CardMedia, Rating, Typography } from "@mui/material";
 import { RouterProduct } from "../../Router";
 import { FlexBox, FlexColum, StyledImage } from "../../App.Styled";
+import { ProductDetails } from "./components";
 
 export const Product = () => {
   const ReviewCard = () => {
@@ -36,6 +37,7 @@ export const Product = () => {
   };
   return (
     <StyledDescriptionWrapper>
+      <ProductDetails />
       <MenuDescription>
         <MenuText>Description</MenuText>
         <MenuText>Additional Info</MenuText>
