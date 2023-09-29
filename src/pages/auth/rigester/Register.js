@@ -1,13 +1,25 @@
 import React from 'react';
 import AuthLayout from "../AuthLayout";
-import {StyledError, StyledInput, StyledSignInWrapper, StyledWrapper} from "../Auth.Styled";
-import {Button, Typography} from "@mui/material";
+import { StyledError, StyledInput, StyledSignInWrapper, StyledWrapper } from "../Auth.Styled";
+import { Button, Typography } from "@mui/material";
 import Link from "@mui/material/Link";
-import {Form, Formik} from "formik";
-import {FlexColum} from "../../../App.Styled";
-import {SigninSchema} from "../../../validation";
+import { Form, Formik } from "formik";
+import { FlexColum } from "../../../App.Styled";
+import { SigninSchema } from "../../../validation";
+import axios from 'axios';
 
-function Register() {
+
+
+function Register(values) {
+    const handleRegister = async()=>{
+        try {
+        const response = await axios.post("https://e-commerce-api-fylh.onrender.com/api/register",values)
+        console.log(response);
+
+        } catch (e) {
+            console.log(e.response.data.user, "Error");
+        }
+    }
     return (
         <AuthLayout>
             <StyledSignInWrapper>
@@ -20,44 +32,41 @@ function Register() {
                     <Formik
                         initialValues={{
                             name: "",
-                            email:"",
+                            email: "",
                             password: "",
                         }}
-                        onSubmit={() => console.log("test")}
+                        onSubmit={handleRegister}
                         validationSchema={SigninSchema}
                     >
 
-                        {({errors, handleSubmit, isSubmitting, setSubmitting , touched}) => (
-                            <Form  onSubmit={handleSubmit}>
+                        {({ errors, handleSubmit, isSubmitting, setSubmitting, touched }) => (
+                            <Form onSubmit={handleSubmit}>
                                 <FlexColum margin={"20px 0"}>
-                                    <StyledInput placeholder={"Your username"} name={"name"}/>
+                                    <StyledInput placeholder={"Your username"} name={"name"} />
                                     {/*{isSubmitting && <StyledError name={"name"} component={"small"}/>}*/}
                                     {errors.name && touched.name ? (
                                         <div>{errors.name}</div>
                                     ) : null}
 
-                                </FlexColum>
+                                </FlexColum >
                                 <FlexColum margin={"20px 0"}>
-                                    <StyledInput placeholder={"Your email"} name={"email"}/>
-                                    <StyledError name={"email"} component={"small"}/>
-
-
-                                </FlexColum>
+                                    <StyledInput placeholder={"Your email"} name={"email"} />
+                                    <StyledError name={"email"} component={"small"} />
+                                </FlexColum >
                                 <FlexColum margin={"0 0 20px 0"}>
-                                    <StyledInput placeholder={"Password"} name={"password"}/>
-                                    <StyledError name={"password"} component={"small"}/>
-                                </FlexColum>
+                                    <StyledInput placeholder={"Password"} name={"password"} />
+                                    <StyledError name={"password"} component={"small"} />
+                                </FlexColum >
 
                                 <Button type={"submit"} variant="contained" fullWidth={true}>
                                     Sign up
-                                </Button>
-                            </Form>
-
+                                </Button >
+                            </Form >
                         )}
-                    </Formik>
-                </StyledWrapper>
-            </StyledSignInWrapper>
-        </AuthLayout>
+                    </Formik >
+                </StyledWrapper >
+            </StyledSignInWrapper >
+        </AuthLayout >
     );
 }
 
